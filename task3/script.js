@@ -1,8 +1,9 @@
 const printSegitiga = 5
 
 for(let i=printSegitiga; i>=1; i--){
+    let tampung = "";
     for(let j=1; j<=i; j++){
-        console.log(j+ "");
+        tampung += j
     }
-    console.log();
+    console.log(tampung);
 }
