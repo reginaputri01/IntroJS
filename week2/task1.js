@@ -1,9 +1,8 @@
 //Built-in Function Javascript
-//1. forEach() -> untuk melakukan pengulangan di dalam array
-// const array = [1, 2, 3, 4, 5]
-// array.forEach(item => { 
-//   console.log(item);
-// });
+//1. pop() -> untuk menghapus elemen terakhir dari array, dan mengembalikan elemen itu
+// const fruits = ["Banana", "Orange", "Apple", "Mango"]
+// fruits.pop()
+// console.log(fruits)
 
 //2. find() -> untuk mengembalikan nilai dari elemen pertama dalam array yang memenuhi ketentuan 
 // const angka = [3, 10, 18, 20]
