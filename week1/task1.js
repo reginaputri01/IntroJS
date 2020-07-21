@@ -14,17 +14,17 @@ const biodata = {
             name: "SMK Telkom Purwokerto",
             yearIn: 2017,
             yearOut: 2020,
-            major: null
+            major: "Rekayasa Perangkat Lunak"
         },
     ],
     skills: [
         {
             skillName: "Web Development",
-            level: "advanced"
+            level: "beginner"
         },
         {
             skillName: "React Native",
-            level: "advanced"
+            level: "beginner"
         }
     ],
     interestInCoding: true
