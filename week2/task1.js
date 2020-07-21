@@ -5,15 +5,14 @@
 //   console.log(item);
 // });
 
-//2. filter() ->  untuk membuat sebuah array baru dengan memperhatikan kondisi tertentu pada setiap elemen dari array yang sudah ada
-// const angka = [1, 2, 3, 4, 5, 6]
-// const filteredArray = angka.filter(item => item % 3 === 0);
-// console.log(filteredArray)
+//2. find() -> untuk mengembalikan nilai dari elemen pertama dalam array yang memenuhi ketentuan 
+// const angka = [3, 10, 18, 20]
+// const findArray = angka.find(item => item >= 18);
+// console.log(findArray)
 
-//3. map() -> untuk membuat array baru sekaligus melakukan operasi terhadap setiap elemen array
-// const angka = [1, 2, 3, 4, 5, 6]
-// const multipleOfTwo = angka.map(e => e * 3);
-// console.log(multipleOfTwo);
+//3. from() -> untuk mengembalikan objek Array dari objek apa pun dengan properti panjang atau objek yang dapat diulang
+// const myArr = Array.from("ABCDEFG");
+// console.log(myArr)
 
 //4. includes() -> untuk mengecek apakah pada elemen array memenuhi suatu kondisi atau tidak
 // const angka = [1, 2, 3, 4, 5, 6]
@@ -35,10 +34,10 @@
 // const sum = angka.reduce((total, value) => total + value, 0); 
 // console.log(sum);
 
-//8. sort() -> untuk mengurutkan elemen pada array
-// const angka = [20, 43, 3, 6, 9]
-// const descOrder = angka.sort((a, b) => a > b ? 1 : -1);
-// console.log(descOrder);
+//8. join() -> untuk mengurutkan elemen pada array
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// const result = fruits.join()
+// console.log(result)
 
 //9. concat() -> untuk menggabungkan 2 array menjadi 1 array
 // const fruits = ['apel', 'banana', 'mango']
@@ -46,6 +45,7 @@
 // const newArray = fruits.concat(number);
 // console.log(newArray);
 
-//10. Array.of() -> untuk membuat array dari setiap argumen yang dipassing
-// const angka = Array.of(1, 2, 3, 4, 5, 6);
-// console.log(angka);
+//10. slice() -> untuk mengembalikan elemen yang dipilih dalam array, sebagai objek array baru
+// const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+// const citrus = fruits.slice(1, 3);
+// console.log(citrus)
