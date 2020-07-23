@@ -5,10 +5,15 @@ function searchName(item, limit, callback) {
         'Deirdre', 'Diana', 'Elizabeth', 'Ella', 'Faith', 
         'Olivia', 'Penelope'
     ]
-    const search =  name.filter(function(val){
-        return val.toLowerCase().indexOf(item.toLowerCase()) > -1
+    const dataFilter =  name.filter((index) => {
+        return index.toLowerCase().indexOf(item.toLowerCase()) > -1
     })
-    callback(search, limit)
+    if(dataFilter != 0){
+        callback(dataFilter, limit)
+    }else{
+        console.log("Data tidak ditemukan")
+    }
+    
 }
 
 const limitPrint = (data, limit) => {
@@ -16,7 +21,7 @@ const limitPrint = (data, limit) => {
     console.log(result)
 }
 
-searchName('an', 3, limitPrint)
+searchName('a', 3, limitPrint)
 
 
     

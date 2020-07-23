@@ -1,9 +1,9 @@
 const seleksiNilai= (nilaiAwal, nilaiAkhir, dataArray) => {
     if(nilaiAwal<nilaiAkhir){
         const result = dataArray.filter((number) => {
-            return (number >= nilaiAwal && number <=nilaiAkhir)
+            return number >= nilaiAwal && number <=nilaiAkhir
         })
-        if(result != 0){
+        if(result.length > 0){
             result.sort((a, b) => {
                 return a-b
             })
@@ -16,4 +16,4 @@ const seleksiNilai= (nilaiAwal, nilaiAkhir, dataArray) => {
     }
 }
 
-seleksiNilai(5, 17,  [2, 25, 4])
+seleksiNilai(5, 6 , [2, 25, 4, 14, 17, 30, 8])
