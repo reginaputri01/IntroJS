@@ -10,11 +10,16 @@ const getmonth = (callback) => {
     }, 4000)
 }
 
-const printMonth = (item, data) => {
-    let result = data;
-    result.map((item)=>{
-        console.log(item)
-    })
+const printMonth = (err, data) => {
+    if(err == null){
+        let result = data;
+        result.map((item)=>{
+            console.log(item)
+        })
+    } else {
+        console.log(err.message)
+    }
+    
 }
 
 getmonth(printMonth)

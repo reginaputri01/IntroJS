@@ -10,13 +10,24 @@ const score = (mtk, ipa, bIng) => {
         }
     })
 }
-
-score(90, 80, 70).then((res)=> {
+//then-catch
+score(90, 80, "70").then((res)=> {
     console.log(res)
 })
 .catch((err)=>{
     console.log(err)
 })
+//try-catch
+const getScore = async()=>{
+    try {
+        const result = await score(70, 70, 80)
+        console.log(result)
+    } catch (error) {
+        console.log(error.message)
+    }
+}
+getScore()
+
 
 //dua
 const hello = (namaLengkap, namaPanggilan) => {
@@ -24,15 +35,25 @@ const hello = (namaLengkap, namaPanggilan) => {
         if(typeof namaLengkap === 'string' && typeof namaPanggilan === 'string'){
                 resolve(`Hallo, saya ${namaLengkap} biasanya dipanggil ${namaPanggilan}`)
         }else{
-            const error = "Inputannya harus bertipe string guyss.."
+            const error = "Inputannya harus bertipe string"
             reject(error)
         }
     })
 }
-
-hello('Regina Putri', 'Putri').then((res)=> {
+//then-catch
+hello('Regina Putri Arinda', 'Putri').then((res)=> {
     console.log(res)
 })
 .catch((err)=>{
     console.log(err)
 })
+//try-catch
+const getName = async()=>{
+    try {
+        const result = await hello('Regina Putri', 'Putri')
+        console.log(result)
+    } catch (error) {
+        console.log(error.message)
+    }
+}
+getName()
