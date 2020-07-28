@@ -11,4 +11,4 @@ function palindrome(str) {
    return "Palindrome"
   }
   
-  palindrome("A man, a plan, a canal. Panama");
+  palindrome("Kasur, ini rusak");

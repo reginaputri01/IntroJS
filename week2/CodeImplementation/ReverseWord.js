@@ -1,10 +1,10 @@
-let kalimat = 'Saya Belajar Javascript'
-let toArray = kalimat.split(" ")
-let reversedWord = []
+const text = 'Saya Belajar Javascript'
+const toArray = kalimat.split(" ")
+const result = []
 
 for(let x = (kalimat.length-1); x >=0; x--)
 {
-  reversedWord.push(toArray[x])
+  result.push(toArray[x])
 }
 
-console.log(reversedWord.join(" "))
+console.log(result.join(" "))
